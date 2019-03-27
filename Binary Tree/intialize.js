@@ -8,4 +8,5 @@ var tree = new Tree();
   tree.addValue(35);
   tree.addValue(1);
   console.log(tree);
+  tree.traverse();
 })();

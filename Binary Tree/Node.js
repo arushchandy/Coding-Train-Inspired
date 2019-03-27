@@ -19,3 +19,14 @@ Node.prototype.addNode = function(n) {
     }
   }
 };
+
+
+Node.prototype.visit = function(){
+  if(this.left != null){
+    this.left.visit();
+  }
+  console.log(this.value);
+  if(this.right != null){
+    this.right.visit();
+  }
+}
