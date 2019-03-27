@@ -14,3 +14,8 @@ Tree.prototype.addValue = function(n) {
 Tree.prototype.traverse = function() {
   this.root.visit();
 };
+
+Tree.prototype.search = function(n) {
+  var valueFound = this.root.search(n);
+  console.log(valueFound);
+};
